@@ -3,7 +3,28 @@ import cv2
 from PIL import ImageGrab
 
 
-#  Prueba sublime - git
+class video2Contour:
+    '''Procesador de video basado en cv2, obtiene el contorno en tiempo real correspondiente
+    a los distintos movimientos que aparecen en un video. '''
+
+    def __init__(self, source):
+        '''Como parametros recibe:
+        Source: 0 si se desea usar el dispositivo predeterminado de video o
+                path si se quiere analizar un video'''
+
+
+    def setBlurParams(self, kernel = (5,5), ammount = 1):
+        self.blurKernel = kernel
+        self.blurAmmount = ammount
+
+        
+    def start(self):
+        '''Comienza el procesamiento'''
+        self.cap = cv2.VideoCapture(source)
+
+
+
+
 cap = cv2.VideoCapture(0)
 
 cont = 0
