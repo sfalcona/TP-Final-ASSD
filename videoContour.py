@@ -2,6 +2,8 @@ import numpy as np
 import cv2
 from PIL import ImageGrab
 
+
+#  Prueba sublime - git
 cap = cv2.VideoCapture(0)
 
 cont = 0
